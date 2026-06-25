@@ -1,0 +1,15 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "4.77.0"
+    }
+  }
+  backend "local" {
+    path = "path/terraform.tfstate"
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
