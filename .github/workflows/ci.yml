@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   my_first_job:
-    name: My Terraform Plan Show Only
+    name: Terraform Plan Show Only
     runs-on: ubuntu-latest
 
     steps:
