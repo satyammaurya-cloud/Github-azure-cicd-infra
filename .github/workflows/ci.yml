@@ -1,7 +1,7 @@
-name: Azure Infra Plan CI- Update-2
+name: Azure Infra CI- Pipeline
 
 on:
-  pull_request:
+  push:
     branches:
       - "main"
 
@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   my_first_job:
-    name: My first job
+    name: My Terraform Plan Show Only
     runs-on: ubuntu-latest
 
     steps:
