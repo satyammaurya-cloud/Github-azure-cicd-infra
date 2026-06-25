@@ -1,4 +1,4 @@
-name: Azure Infra Plan CI
+name: Azure Infra Plan CI- Update-2
 
 on:
   pull_request:
