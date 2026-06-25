@@ -38,12 +38,12 @@ jobs:
 
       - name: Terraform FMT
         run: terraform fmt
-        working-directory: ./Azure-infra  
+        working-directory: ./Azure-infra
 
       - name: Terraform Validate
         run: terraform validate
-        working-directory: ./Azure-infra   
+        working-directory: ./Azure-infra
         
       - name: Terraform Plan
         run: terraform plan
-        working-directory: ./Azure-infra     
+        working-directory: ./Azure-infra
