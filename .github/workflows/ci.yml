@@ -1,8 +1,35 @@
 name: Azure Infra Setup
 
 on:
-    push:
-        branch [main]
+  push:
+    branches:
+      - main
 
+jobs:
+  my_first_job:
+    name: My first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Terraform Installation
+        uses: hashicorp/setup-terraform@v2.0.3
+
+      - name: Terraform Init
+        run: terraform init
+        working-directory: ./Azure-infra
+
+      - name: Terraform FMT
+        run: terraform fmt
+        working-directory: ./Azure-infra  
+
+      - name: Terraform Validate
+        run: terraform validate
+        working-directory: ./Azure-infra   
         
+      - name: Terraform Plan
+        run: terraform plan
+        working-directory: ./Azure-infra     
+
 
