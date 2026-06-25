@@ -1,7 +1,7 @@
 name: "Azure Infra Deployment CD"
 
 on:
-  push:
+  pull_request: 
     branches:
       - "main"
 
