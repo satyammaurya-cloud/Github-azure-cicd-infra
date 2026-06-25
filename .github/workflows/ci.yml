@@ -1,4 +1,4 @@
-name: Azure Infra CI- Pipeline
+name: Azure Infra - Plan Show Only
 
 on:
   push:

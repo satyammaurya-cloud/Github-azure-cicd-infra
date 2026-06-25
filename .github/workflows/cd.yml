@@ -1,4 +1,4 @@
-name: Azure Deployment Pipeline -2
+name: Azure Infra Deployment Azure - CD
 
 on:
   pull_request:
@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   my_first_job:
-    name: Infra Deployment 
+    name: Azure Infra Deployment 
     runs-on: ubuntu-latest
 
     steps:
