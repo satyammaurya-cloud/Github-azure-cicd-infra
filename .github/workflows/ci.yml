@@ -1,0 +1,8 @@
+name: Azure Infra Setup
+
+on:
+    push:
+        branch [main]
+
+        
+
