@@ -3,11 +3,11 @@ rgs = {
     name     = "hcl-rg"
     location = "Central India"
   }
-    rg1 = {
+    rg2 = {
     name     = "xyz-rg"
     location = "Central India"
   }
-    rg1 = {
+    rg3 = {
     name     = "abc-rg"
     location = "Central India"
   }
